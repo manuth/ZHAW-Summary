@@ -1,0 +1,5036 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Sebastian Zumbrunn">
+      
+      
+      
+        <link rel="prev" href="../Spezielle%20Verteilung.html">
+      
+      
+        <link rel="next" href="../../SWEN1/01_Usability%20Engineering.html">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>STS Summary - Seppli's Summaries</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sts-summary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="Seppli&#39;s Summaries" class="md-header__button md-logo" aria-label="Seppli's Summaries" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Seppli's Summaries
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              STS Summary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Seppli&#39;s Summaries" class="md-nav__button md-logo" aria-label="Seppli's Summaries" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Seppli's Summaries
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html" class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          21HS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="21HS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          21HS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" tabindex="0" aria-expanded="false">
+          AN1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="AN1" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          AN1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/AN1/01_funktionen.html" class="md-nav__link">
+        Summenzeichen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/AN1/02_polynome.html" class="md-nav__link">
+        Polynome Division
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/AN1/03_Ableiten.html" class="md-nav__link">
+        Ableiten
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1_4" type="checkbox" id="__nav_2_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_4" tabindex="0" aria-expanded="false">
+          Summaries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summaries" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Summaries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/AN1/summaries/summary_2022_01_26.html" class="md-nav__link">
+        AN Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" tabindex="0" aria-expanded="false">
+          COM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="COM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          COM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/01_Kernthemen-Austausch.html" class="md-nav__link">
+        01 Kernthemen Austausch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/02_Suchstrategien.html" class="md-nav__link">
+        Suchbegriffe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/03_Publikationstypen.html" class="md-nav__link">
+        Monografie (eigenständiges Buch)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/04_Wissenschaftilichen%20Text.html" class="md-nav__link">
+        04 Wissenschaftilichen Text
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/05_pitch.html" class="md-nav__link">
+        CCC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/06_handout.html" class="md-nav__link">
+        Kriterien
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2_7" type="checkbox" id="__nav_2_2_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_7" tabindex="0" aria-expanded="false">
+          Presentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Presentation" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Presentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/Presentation/Pitch%20v2.html" class="md-nav__link">
+        Pitch v2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/COM/Presentation/Pitch.html" class="md-nav__link">
+        Pitch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" tabindex="0" aria-expanded="false">
+          DB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DB" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          DB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/00_Pr%C3%BCfung.html" class="md-nav__link">
+        00 Prüfung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/01_Begriffe.html" class="md-nav__link">
+        Begriffe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/02_Grundoperation.html" class="md-nav__link">
+        02 Grundoperation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/03_Entity%20Relationship%20Diagram.html" class="md-nav__link">
+        ER-Diagram
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/04_SQL.html" class="md-nav__link">
+        SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/05_Integrit%C3%A4tsregeln.html" class="md-nav__link">
+        Integritätsregeln
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3_7" type="checkbox" id="__nav_2_3_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_7" tabindex="0" aria-expanded="false">
+          Summaries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summaries" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Summaries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DB/summaries/summary-2022-01-25.html" class="md-nav__link">
+        DB Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" tabindex="0" aria-expanded="false">
+          DM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          DM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/01_Aussaglogik.html" class="md-nav__link">
+        01 Aussaglogik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/02_Semantik.html" class="md-nav__link">
+        02 Semantik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/03_Mengen.html" class="md-nav__link">
+        Mengen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/04_Nat%C3%BCrliche%20Zahlen.html" class="md-nav__link">
+        Natürliche Zahlen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/05_Ganz%20Zahlen.html" class="md-nav__link">
+        Ganz Zahlen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4_6" type="checkbox" id="__nav_2_4_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4_6" tabindex="0" aria-expanded="false">
+          Summaries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summaries" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Summaries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/Summaries/01_summary_2021-11-23.html" class="md-nav__link">
+        Summary - 2021-11-23
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/DM/Summaries/01_summary_2022_01_17.html" class="md-nav__link">
+        01 summary 2022 01 17
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" tabindex="0" aria-expanded="false">
+          GED
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GED" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          GED
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5_1" type="checkbox" id="__nav_2_5_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_1" tabindex="0" aria-expanded="false">
+          Elektronik
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Elektronik" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Elektronik
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Elektronik/Maschen%20und%20Knotensatz.html" class="md-nav__link">
+        Knotenregel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5_2" type="checkbox" id="__nav_2_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_2" tabindex="0" aria-expanded="false">
+          Physik
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Physik" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Physik
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/00_Formeln.html" class="md-nav__link">
+        Formeln
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/01_ch%C3%BCgelif%C3%BCsik.html" class="md-nav__link">
+        Chügeli Füsik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/02_Elektrotechnik.html" class="md-nav__link">
+        Elektrotechnik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/03_Elektromagnetismus.html" class="md-nav__link">
+        Elektromagnetismus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/04_Thermische_Strahlung.html" class="md-nav__link">
+        Termische Strahlung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/05_Signale.html" class="md-nav__link">
+        Signale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/all-ged-summaries.html" class="md-nav__link">
+        All ged summaries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/GED/Physik/include.html" class="md-nav__link">
+        Include
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6" tabindex="0" aria-expanded="false">
+          INCO
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="INCO" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          INCO
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/00_Infos.html" class="md-nav__link">
+        Infos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/2_Sequenzelle%20Bauteile.html" class="md-nav__link">
+        2 Sequenzelle Bauteile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/3_Zahlensysteme.html" class="md-nav__link">
+        Zahlensysteme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/4_Informationstheorie.html" class="md-nav__link">
+        Was ist Information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/5_JEPG.html" class="md-nav__link">
+        5 JEPG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/6_Audio.html" class="md-nav__link">
+        Audio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/7_Kanalkodierung.html" class="md-nav__link">
+        Kanalkodierung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/8_Matrix.html" class="md-nav__link">
+        Matrix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/9_Faltungscode.html" class="md-nav__link">
+        9 Faltungscode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_10" type="checkbox" id="__nav_2_6_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_10" tabindex="0" aria-expanded="false">
+          Summaries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summaries" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_10">
+          <span class="md-nav__icon md-icon"></span>
+          Summaries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/INCO/summaries/summary_2022-01-20.html" class="md-nav__link">
+        INCO Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7" tabindex="0" aria-expanded="false">
+          PM1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PM1" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          PM1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/PM1/Beschlussprotokoll.html" class="md-nav__link">
+        Beschlussprotokoll
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/PM1/Feedback.html" class="md-nav__link">
+        Feedback
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/PM1/Projekt%203%20-%20Siedler%20von%20Catan.html" class="md-nav__link">
+        Projekt 3 - Siedler von Catan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../21HS/PM1/Retrospektive.html" class="md-nav__link">
+        Retrospektive
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          22FS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="22FS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          22FS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="false">
+          AN2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="AN2" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AN2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/AN2/summary_2022_06_20.html" class="md-nav__link">
+        AN2 Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          Communication2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Communication2" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Communication2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/Communication2/01_Presentation.html" class="md-nav__link">
+        Presentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/Communication2/Presentation_Script.html" class="md-nav__link">
+        Presentation Script
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" tabindex="0" aria-expanded="false">
+          KT
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="KT" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          KT
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/00_Glossar.html" class="md-nav__link">
+        Glossar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/01_OSI-Modell.html" class="md-nav__link">
+        OSI-Modell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/02_Serielle-%C3%9Cbertragung.html" class="md-nav__link">
+        02 Serielle Übertragung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/03_%C3%9Cbertragunsmedien.html" class="md-nav__link">
+        Übertragungsmedien (Layer 1)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/04_Data%20Link.html" class="md-nav__link">
+        Data Link Layer (Layer 2)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/05_LAN.html" class="md-nav__link">
+        LAN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/06_Network%20Layer.html" class="md-nav__link">
+        Network Layer (Layer 3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/07_Transport%20Layer.html" class="md-nav__link">
+        Transport Layer (Layer 4)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/08_Application_Layer.html" class="md-nav__link">
+        Application Layer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/KT/summary.html" class="md-nav__link">
+        KT Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4" tabindex="0" aria-expanded="false">
+          LA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="LA" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          LA
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/LA/01_Lineare%20Gleichungssysteme.html" class="md-nav__link">
+        Lineare Gleichungssystem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/LA/02_Vektoren.html" class="md-nav__link">
+        Vektoren
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/LA/03_Matrix.html" class="md-nav__link">
+        Matrix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/LA/05_Vektorr%C3%A4ume.html" class="md-nav__link">
+        Vektorräume
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/LA/06_Lineare%20Abbildung.html" class="md-nav__link">
+        Lineare Abbildung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/LA/summary.html" class="md-nav__link">
+        LA Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5" tabindex="0" aria-expanded="false">
+          PM2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PM2" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          PM2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PM2/Massnahmen.html" class="md-nav__link">
+        Massnahmen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PM2/Pitch.html" class="md-nav__link">
+        Pitch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PM2/Projektskizze.html" class="md-nav__link">
+        Projektskizze
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6" tabindex="0" aria-expanded="false">
+          PROG2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PROG2" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          PROG2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PROG2/-1_Stuff.html" class="md-nav__link">
+        Stuff
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PROG2/00_Gradle.html" class="md-nav__link">
+        Gradle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PROG2/01_Concurrency.html" class="md-nav__link">
+        Concurrency
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/PROG2/summary.html" class="md-nav__link">
+        PROG2 Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7" tabindex="0" aria-expanded="false">
+          SNP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SNP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          SNP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/01_C.html" class="md-nav__link">
+        C-Sprache
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/02_Preprocessor%20und%20Compiler.html" class="md-nav__link">
+        Preprocessor und Compiler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/03_Make.html" class="md-nav__link">
+        Make
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/04_Unit%20Tests.html" class="md-nav__link">
+        Unit Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/05_OS.html" class="md-nav__link">
+        OS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/06_Standard%20Library.html" class="md-nav__link">
+        Standard Library
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/SNP/summary_jonas.html" class="md-nav__link">
+        SNP Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8" tabindex="0" aria-expanded="false">
+          THIN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="THIN" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          THIN
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/00_Fragen.html" class="md-nav__link">
+        Fragen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/01_Definitionen.html" class="md-nav__link">
+        Definitionen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/02_RegEx.html" class="md-nav__link">
+        RegEx
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/03_Endliche%20%20Automaten.html" class="md-nav__link">
+        Endliche Automaten
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/04_Kontextfreie%20Gramatik.html" class="md-nav__link">
+        Kontextfreie Grammatik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/05_Keller%20Automaten.html" class="md-nav__link">
+        Keller Automaten
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/06_Turing%20Machine.html" class="md-nav__link">
+        Turing Maschine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/07_Berechnungsmodelle.html" class="md-nav__link">
+        Berechnungsmodelle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/08_Entscheidbarkeit.html" class="md-nav__link">
+        Entschheidbarkeit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/09_Komplexit%C3%A4tstheorie.html" class="md-nav__link">
+        Komplexitätstheorie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/summary%20%28copy%29.html" class="md-nav__link">
+        THIN Summary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../22FS/THIN/summary.html" class="md-nav__link">
+        THIN Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="true">
+          22HS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="22HS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          22HS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" tabindex="0" aria-expanded="false">
+          ADS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ADS" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          ADS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/ADS.html" class="md-nav__link">
+        ADS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Backtracking.html" class="md-nav__link">
+        Backtracking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Dynamische%20Programmierung.html" class="md-nav__link">
+        Dynamische Programmierung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Java.html" class="md-nav__link">
+        Java
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Rekursive.html" class="md-nav__link">
+        Rekursive
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Sortieren.html" class="md-nav__link">
+        Sortieren
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Textsuche.html" class="md-nav__link">
+        Textsuche
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Zufall.html" class="md-nav__link">
+        Zufall
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_1_9" type="checkbox" id="__nav_4_1_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1_9" tabindex="0" aria-expanded="false">
+          Daten Typen
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Daten Typen" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_1_9">
+          <span class="md-nav__icon md-icon"></span>
+          Daten Typen
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/Graph.html" class="md-nav__link">
+        Graph
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/HashMap.html" class="md-nav__link">
+        HashMap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/List.html" class="md-nav__link">
+        List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/Queue.html" class="md-nav__link">
+        Queue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/Set.html" class="md-nav__link">
+        Set
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/Stack.html" class="md-nav__link">
+        Stack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ADS/Daten%20Typen/Tree.html" class="md-nav__link">
+        Tree
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" tabindex="0" aria-expanded="false">
+          CAE
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CAE" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          CAE
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Conditional.html" class="md-nav__link">
+        Conditional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Linking%20Words.html" class="md-nav__link">
+        Linking Words
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Listening.html" class="md-nav__link">
+        Listening
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Passive%20Voice.html" class="md-nav__link">
+        Passive Voice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Report.html" class="md-nav__link">
+        Report
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Reported%20Speech.html" class="md-nav__link">
+        Reported Speech
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAE/Tenses.html" class="md-nav__link">
+        Tenses
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3" tabindex="0" aria-expanded="false">
+          CT1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CT1" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          CT1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CT1/01_Hardware.html" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CT1/02_Assembler.html" class="md-nav__link">
+        Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CT1/03_Functions.html" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CT1/04_Toolchain.html" class="md-nav__link">
+        Tool Chain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CT1/05_Optimierung.html" class="md-nav__link">
+        Optimierung
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4" tabindex="0" aria-expanded="false">
+          Communication3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Communication3" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Communication3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication3/COM3.html" class="md-nav__link">
+        COM3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication3/Report%20Hosting%20the%20World%20Cup.html" class="md-nav__link">
+        Report Hosting the World Cup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication3/Report%20mPHone%208%20Plus.html" class="md-nav__link">
+        Report - mPHone 8 Plus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication3/Zusammenfassung%20Hippocratic%20Oath.html" class="md-nav__link">
+        Zusammenfassung - A Hippocratic Oath for Technoligists
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication3/Zusammenfassung%20Projektmanagment.html" class="md-nav__link">
+        Zusammenfassung - A short course in project management
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5" tabindex="0" aria-expanded="false">
+          HM1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HM1" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          HM1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HM1/1_Zahlen.html" class="md-nav__link">
+        Gleitkommazahlen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HM1/2_Nullstellen.html" class="md-nav__link">
+        Nullstellen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HM1/3_Lineare%20Gleichungssysteme.html" class="md-nav__link">
+        Lineare Gleichungssysteme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HM1/4_Komplexe%20Zahlen.html" class="md-nav__link">
+        Komplexe Zahlen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_5_5" type="checkbox" id="__nav_4_5_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5_5" tabindex="0" aria-expanded="false">
+          Summary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summary" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          Summary
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HM1/summary/HM1%20Summary.html" class="md-nav__link">
+        HM1 Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6" tabindex="0" aria-expanded="false">
+          ICAM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ICAM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          ICAM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ICAM/Critical%20Incident%20Analysis.html" class="md-nav__link">
+        Critical Incident
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ICAM/Intercultural%20Competence.html" class="md-nav__link">
+        Intercultural Competence
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ICAM/Test.html" class="md-nav__link">
+        Test
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_7" tabindex="0" aria-expanded="true">
+          STS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="STS" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          STS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deskriptive%20Statistik.html" class="md-nav__link">
+        Deskriptive Statistik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kombinatorik.html" class="md-nav__link">
+        Kombinatorik
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spezielle%20Verteilung.html" class="md-nav__link">
+        Spezielle Verteilung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_7_4" type="checkbox" id="__nav_4_7_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_7_4" tabindex="0" aria-expanded="true">
+          Summary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summary" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Summary
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          STS Summary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="STS%20Summary.html" class="md-nav__link md-nav__link--active">
+        STS Summary
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deskriptive-statistik" class="md-nav__link">
+    Deskriptive Statistik
+  </a>
+  
+    <nav class="md-nav" aria-label="Deskriptive Statistik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quantile-boxplot" class="md-nav__link">
+    Quantile / Boxplot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pearson-korrelationskoeffizient" class="md-nav__link">
+    Pearson-Korrelationskoeffizient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spearman-rangkorrelationskoeffizient" class="md-nav__link">
+    Spearman-Rangkorrelationskoeffizient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kombinatorik" class="md-nav__link">
+    Kombinatorik
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wahrscheinlichkeit" class="md-nav__link">
+    Wahrscheinlichkeit
+  </a>
+  
+    <nav class="md-nav" aria-label="Wahrscheinlichkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kenngrossen" class="md-nav__link">
+    Kenngrössen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bedingte-wahrscheinlichkeit" class="md-nav__link">
+    Bedingte Wahrscheinlichkeit
+  </a>
+  
+    <nav class="md-nav" aria-label="Bedingte Wahrscheinlichkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vierfeldertafel" class="md-nav__link">
+    Vierfeldertafel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stochastische-unabhangigkeit" class="md-nav__link">
+    Stochastische Unabhängigkeit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spezielle-verteilungen" class="md-nav__link">
+    Spezielle Verteilungen
+  </a>
+  
+    <nav class="md-nav" aria-label="Spezielle Verteilungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypergeometrische-verteilung-x-sim-hn-m-n" class="md-nav__link">
+    Hypergeometrische Verteilung (\(X \sim H(N, M, n)\))
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bernoulliverteilung" class="md-nav__link">
+    Bernoulliverteilung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomailverteilung-xsim-bn-p" class="md-nav__link">
+    Binomailverteilung (\(X\sim B(n, p)\))
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poissonverteilung-xsim-plambda" class="md-nav__link">
+    Poissonverteilung (\(X\sim P(\lambda)\))
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gausssche-verteilung-xsim-nmu-sigma-xsim-n0-1" class="md-nav__link">
+    Gauss'sche Verteilung (\(X\sim N(\mu, \sigma)\) / \(X\sim N(0, 1)\))
+  </a>
+  
+    <nav class="md-nav" aria-label="Gauss'sche Verteilung (\(X\sim N(\mu, \sigma)\) / \(X\sim N(0, 1)\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approximationen" class="md-nav__link">
+    Approximationen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zentraler-grenzwertsatz" class="md-nav__link">
+    Zentraler Grenzwertsatz
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression" class="md-nav__link">
+    Regression
+  </a>
+  
+    <nav class="md-nav" aria-label="Regression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bestimmtheitsmass" class="md-nav__link">
+    Bestimmtheitsmass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linearisieren" class="md-nav__link">
+    Linearisieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizen" class="md-nav__link">
+    Matrizen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schliessende-statistik" class="md-nav__link">
+    Schliessende Statistik
+  </a>
+  
+    <nav class="md-nav" aria-label="Schliessende Statistik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertrauensintervalle" class="md-nav__link">
+    Vertrauensintervalle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8" tabindex="0" aria-expanded="false">
+          SWEN1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SWEN1" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          SWEN1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/01_Usability%20Engineering.html" class="md-nav__link">
+        Usability Engineering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/02_Use%20Case.html" class="md-nav__link">
+        Use-Case
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Dom%C3%A4nemodellierung.html" class="md-nav__link">
+        Domänemodellierung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Modelle.html" class="md-nav__link">
+        Modelle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Patterns.html" class="md-nav__link">
+        Patterns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Software%20Architektur.html" class="md-nav__link">
+        Software Architektur
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_8_7" type="checkbox" id="__nav_4_8_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8_7" tabindex="0" aria-expanded="false">
+          Zusatz
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Zusatz" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_8_7">
+          <span class="md-nav__icon md-icon"></span>
+          Zusatz
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Zusatz/Framework.html" class="md-nav__link">
+        Framework
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Zusatz/GUI.html" class="md-nav__link">
+        GUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Zusatz/Persistenz.html" class="md-nav__link">
+        Persistenz
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/Zusatz/Verteiltes%20System.html" class="md-nav__link">
+        Verteiltes System
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_8_8" type="checkbox" id="__nav_4_8_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8_8" tabindex="0" aria-expanded="false">
+          Summary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Summary" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_8_8">
+          <span class="md-nav__icon md-icon"></span>
+          Summary
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SWEN1/summary/SWEN%20Zusammenfassung.html" class="md-nav__link">
+        STS Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_9" tabindex="0" aria-expanded="false">
+          WBE
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="WBE" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_9">
+          <span class="md-nav__icon md-icon"></span>
+          WBE
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WBE/Browser.html" class="md-nav__link">
+        Browser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WBE/DOM.html" class="md-nav__link">
+        	DOM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WBE/Express.html" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WBE/Questions.html" class="md-nav__link">
+        Questions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WBE/UI%20Library.html" class="md-nav__link">
+        UI Library
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Allgemein
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Allgemein" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Allgemein
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1" tabindex="0" aria-expanded="false">
+          AN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="AN" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          AN
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/AN/Itegrie-Ableiten-Tabelle.html" class="md-nav__link">
+        Itegrie Ableiten Tabelle
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" tabindex="0" aria-expanded="false">
+          Haskell
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Haskell" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Haskell
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/Haskell/Data%20Classes.html" class="md-nav__link">
+        Data Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/Haskell/Optics.html" class="md-nav__link">
+        Optics
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3" tabindex="0" aria-expanded="false">
+          IP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="IP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          IP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/IP/IP.html" class="md-nav__link">
+        IP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/IP/Meeting%20Student.html" class="md-nav__link">
+        Meeting Student
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4" tabindex="0" aria-expanded="false">
+          Musik
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Musik" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Musik
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/Musik/Tonleitern.html" class="md-nav__link">
+        Tonleitern
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_5" tabindex="0" aria-expanded="false">
+          Nothelfer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nothelfer" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          Nothelfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/Nothelfer/Nothelfer.html" class="md-nav__link">
+        Nothelfer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_6" tabindex="0" aria-expanded="false">
+          PROG
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PROG" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_6">
+          <span class="md-nav__icon md-icon"></span>
+          PROG
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/PROG/2_OOP_Takeaways.html" class="md-nav__link">
+        OOP Takeaways
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/PROG/3_Patterns.html" class="md-nav__link">
+        Patterns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/PROG/4_Testing.html" class="md-nav__link">
+        Testing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/PROG/5_Threads.html" class="md-nav__link">
+        Threads
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/PROG/6_IO.html" class="md-nav__link">
+        IO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Allgemein/PROG/7_Streams.html" class="md-nav__link">
+        Streams
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deskriptive-statistik" class="md-nav__link">
+    Deskriptive Statistik
+  </a>
+  
+    <nav class="md-nav" aria-label="Deskriptive Statistik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quantile-boxplot" class="md-nav__link">
+    Quantile / Boxplot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pearson-korrelationskoeffizient" class="md-nav__link">
+    Pearson-Korrelationskoeffizient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spearman-rangkorrelationskoeffizient" class="md-nav__link">
+    Spearman-Rangkorrelationskoeffizient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kombinatorik" class="md-nav__link">
+    Kombinatorik
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wahrscheinlichkeit" class="md-nav__link">
+    Wahrscheinlichkeit
+  </a>
+  
+    <nav class="md-nav" aria-label="Wahrscheinlichkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kenngrossen" class="md-nav__link">
+    Kenngrössen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bedingte-wahrscheinlichkeit" class="md-nav__link">
+    Bedingte Wahrscheinlichkeit
+  </a>
+  
+    <nav class="md-nav" aria-label="Bedingte Wahrscheinlichkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vierfeldertafel" class="md-nav__link">
+    Vierfeldertafel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stochastische-unabhangigkeit" class="md-nav__link">
+    Stochastische Unabhängigkeit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spezielle-verteilungen" class="md-nav__link">
+    Spezielle Verteilungen
+  </a>
+  
+    <nav class="md-nav" aria-label="Spezielle Verteilungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypergeometrische-verteilung-x-sim-hn-m-n" class="md-nav__link">
+    Hypergeometrische Verteilung (\(X \sim H(N, M, n)\))
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bernoulliverteilung" class="md-nav__link">
+    Bernoulliverteilung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomailverteilung-xsim-bn-p" class="md-nav__link">
+    Binomailverteilung (\(X\sim B(n, p)\))
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poissonverteilung-xsim-plambda" class="md-nav__link">
+    Poissonverteilung (\(X\sim P(\lambda)\))
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gausssche-verteilung-xsim-nmu-sigma-xsim-n0-1" class="md-nav__link">
+    Gauss'sche Verteilung (\(X\sim N(\mu, \sigma)\) / \(X\sim N(0, 1)\))
+  </a>
+  
+    <nav class="md-nav" aria-label="Gauss'sche Verteilung (\(X\sim N(\mu, \sigma)\) / \(X\sim N(0, 1)\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approximationen" class="md-nav__link">
+    Approximationen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zentraler-grenzwertsatz" class="md-nav__link">
+    Zentraler Grenzwertsatz
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression" class="md-nav__link">
+    Regression
+  </a>
+  
+    <nav class="md-nav" aria-label="Regression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bestimmtheitsmass" class="md-nav__link">
+    Bestimmtheitsmass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linearisieren" class="md-nav__link">
+    Linearisieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizen" class="md-nav__link">
+    Matrizen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schliessende-statistik" class="md-nav__link">
+    Schliessende Statistik
+  </a>
+  
+    <nav class="md-nav" aria-label="Schliessende Statistik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertrauensintervalle" class="md-nav__link">
+    Vertrauensintervalle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sts-summary">STS Summary</h1>
+<h2 id="deskriptive-statistik">Deskriptive Statistik</h2>
+<p><img src="res/STS Summary/image-20221227170300247.png" alt="image-20221227170300247" style="zoom:50%;" /></p>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Nicht Klassiert</th>
+<th>Klassiert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>absolute Häuffigkeit <span class="arithmatex">\(h(x)\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>relative Häuffikeit (PMF) <span class="arithmatex">\(f(x)\)</span> / <span class="arithmatex">\(g(x)\)</span></td>
+<td><span class="arithmatex">\(f(x)=\frac{h(x)}n\)</span></td>
+<td><span class="arithmatex">\(g(x)=f_i\)</span></td>
+</tr>
+<tr>
+<td>Dichtefunktion <span class="arithmatex">\(f(x)\)</span> (<span class="arithmatex">\(b_i=\)</span> Klassengrösse ) (PDF)</td>
+<td>-</td>
+<td><span class="arithmatex">\(f(x)=\frac{g(x)}{b_i}\)</span></td>
+</tr>
+<tr>
+<td>kummulative absolute Häuffigkeit <span class="arithmatex">\(H(x)\)</span></td>
+<td><span class="arithmatex">\(H(x)=\sum_{a_i \lt x}h_i\)</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>kummulative relative Häuffigkeit (CDF) <span class="arithmatex">\(F(x)\)</span></td>
+<td><span class="arithmatex">\(F(x)=\sum_{a_i}f_i=\frac{H(x)}{n}\)</span></td>
+<td><span class="arithmatex">\(F(x)=\int^x_{-\infty}f(y)\mathrm d y\)</span>, <span class="arithmatex">\(F(x)=F(a_i)+\frac{x-a_i}{a_{i+1}-a_i}\cdot (F(a_{i+1})-F(a_i))\)</span></td>
+</tr>
+<tr>
+<td>Modus <span class="arithmatex">\(x_{mod}\)</span></td>
+<td>Höchste absolute Häufigkeit</td>
+<td><em>gleich</em></td>
+</tr>
+<tr>
+<td>Klassenmitte <span class="arithmatex">\(M_i\)</span></td>
+<td>-</td>
+<td><span class="arithmatex">\(M_i=\frac{a_{i+1}-a_i}{2}\)</span></td>
+</tr>
+<tr>
+<td>Stichprobenmittelwert <span class="arithmatex">\(\overline x\)</span></td>
+<td><span class="arithmatex">\(\overline x=\frac 1 n\sum^n_{i=1}x_i\)</span></td>
+<td><span class="arithmatex">\(\overline x=\sum^n_{i=1}M_i\cdot f_i\)</span></td>
+</tr>
+<tr>
+<td>Varianz</td>
+<td><span class="arithmatex">\(s^2 = \frac 1 n \sum^n_{i=1}(x_i - \overline x)^2 \\ = \frac 1 n \left (\sum^n_{i=1}x_i^2 \right)- \overline x ^2\)</span></td>
+<td><span class="arithmatex">\(s^2=\sum^n_{i=1}(M_i-\overline x)^2\cdot f_i\)</span></td>
+</tr>
+<tr>
+<td>Korrigierte Varianz</td>
+<td><span class="arithmatex">\(s_{korr}^2=\frac 1 {n-11}\sum^n_{i=1}(x_i - \overline x)^2 \\ = \frac n {n - 1}s^2\)</span></td>
+<td><span class="arithmatex">\(s_{korr}^2= \frac n {n - 1}s^2\)</span></td>
+</tr>
+<tr>
+<td>(korrigierte) Standardabweichung <span class="arithmatex">\(s\)</span></td>
+<td><span class="arithmatex">\(s=\sqrt{s^2}\)</span></td>
+<td><em>gleich</em></td>
+</tr>
+<tr>
+<td>Kovarianz</td>
+<td><span class="arithmatex">\(s_{xy}=\frac 1 n \sum^n_{i=1}(x_i-\overline x)\cdot (y_i- \overline y)\\= \left(\frac 1 n \sum^n_{i=1}x_iy_i\right)-\overline x \cdot \overline y\)</span></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantile-boxplot">Quantile / Boxplot</h3>
+<div class="arithmatex">\[
+\text{Nicht klassiert:}\\
+R_q=\begin{cases}
+\frac{x_{[n \cdot q]}+x_{[n\cdot q + 1]}}{2} &amp; n \cdot q \text{ ganze Zahl}\\
+x_{[\lceil n\cdot q\rceil]} &amp; n\cdot q \text{ keine ganze Zahl}
+\end{cases}\\\\
+\text{klassiert:}\\
+R_q=\frac{b - a}{F(b) - F(a)}\cdot (q - F(a)) + a
+\]</div>
+<p><img src="res/STS Summary/image-20221227175055023.png" alt="image-20221227175055023" style="zoom:50%;" /></p>
+<h2 id="pearson-korrelationskoeffizient">Pearson-Korrelationskoeffizient</h2>
+<div class="arithmatex">\[
+r_{xy}=\frac{S_{xy}}{S_x\cdot S_y}
+\]</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(r_{xy}\approx 1\)</span></td>
+<td>Positiver Linearer Zusammenhang</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(r_{xy}\approx -1\)</span></td>
+<td>Negatiber Linearer Zusammenhang</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(r_{xy}\approx 0\)</span></td>
+<td>Punkte sind gleichmässig um den Schwerpunkt <span class="arithmatex">\((\overline x, \overline y)\)</span> verteilt</td>
+</tr>
+</tbody>
+</table>
+<p>Der Pearon-Korrelationskoeffizient ist <strong>nicht</strong> robust und kann von Ausreisser stark beeinflusst werden.</p>
+<h2 id="spearman-rangkorrelationskoeffizient">Spearman-Rangkorrelationskoeffizient</h2>
+<div class="arithmatex">\[
+\DeclareMathOperator{\rg}{rg}
+r_{Sp}=\frac{\sum^n_{i=1}(\rg(x_i) - \overline{\rg(x)})\cdot(\rg(y_i)-\overline{\rg(y)})}
+{\sqrt{\sum^n_{i=1}(\rg(x_i) - \overline{\rg(x)})^2} \cdot \sqrt{\sum^n_{i=1}(\rg(y_i) - \overline{\rg(y)})^2}}\\
+\rg(x_i)=1+Anzahl(j \vert x_j &lt; x_i) + \frac 1 2 Anzahl(j | x_j = x_i, i \neq j)
+\]</div>
+<p>Deutsch: 1 + die Anzahl von Elementen <span class="arithmatex">\(x_j\)</span>, welche kleiner als <span class="arithmatex">\(x_i\)</span> sind + die halbe Anzahl von Elementen, welche gleich sind, wie <span class="arithmatex">\(x_i\)</span>.</p>
+<p>Wenn es doppelte x- oder y-Elemente gibt, dann wird von verbundenen Rängen gesprochen, wobei der Durchschnitt der Ränge berechnet wird.</p>
+<p>Der Spearman-Rangkorrelationskoeffizient misst, ob die Daten eine Korrelation mit einer strengen monotoner funktion haben (eine Funktion, welche immer steigt oder fällt)</p>
+<p><strong>TODO: Multivarianten Daten darstellen</strong></p>
+<h2 id="kombinatorik">Kombinatorik</h2>
+<p>Binomialkoeffizient: <span class="arithmatex">\(\begin{pmatrix}n \\k \end{pmatrix}=\frac{n!}{(n-k)!\cdot k!}\)</span>
+Wieviel Möglichkeiten gibt es <span class="arithmatex">\(k\)</span> Objekte von <span class="arithmatex">\(n\)</span> Objekten auszuwählen</p>
+<p><span class="arithmatex">\(n\)</span> sind die Anzahl Optionen, <span class="arithmatex">\(k\)</span> wie oft gezogen wird</p>
+<p><img alt="image-20221228103228852" src="res/STS%20Summary/image-20221228103228852.png" /></p>
+<p>Kombination mit Wiederholung: <span class="arithmatex">\(k\)</span> Objekte aus <span class="arithmatex">\(n\)</span> möglchen Sorten/Töpfen</p>
+<p>Beispiele:</p>
+<ul>
+<li>Anzahl Möglichenkeiten für eine Personengruppe mit 20 potentiellen Personen: <span class="arithmatex">\(2^{20}-1\)</span>
+  Jede Person ist entweder in der Gruppe oder nicht und <span class="arithmatex">\(-1\)</span> wegen der Leeren-Menge</li>
+</ul>
+<h2 id="wahrscheinlichkeit">Wahrscheinlichkeit</h2>
+<div class="arithmatex">\[
+\text{Zähldichte: } \rho: \Omega \to [0, 1]\\
+\text{Wahrscheinlichkeitsmass: } P: 2^\Omega \to [0, 1], P(M)=\sum_{\omega \in M} \rho(\omega)
+\]</div>
+<p>Der Wahrscheinlichkeitsraum <span class="arithmatex">\((\Omega, P)\)</span> wird Laplace-Raum genannt, wenn alle Ereignisse gleichwahrscheinlich sind.</p>
+<p><strong>TODO:  geometrische Reihe</strong></p>
+<ul>
+<li><span class="arithmatex">\(P(X=x)=f(x)\)</span></li>
+<li><span class="arithmatex">\(P(X \le x)=F(x)\)</span></li>
+<li><span class="arithmatex">\(P(a \le X \le b)=P(X\le b)-P(X\le a)\)</span></li>
+<li><span class="arithmatex">\(P(X &gt; x)=1-P(X\le x)\)</span></li>
+</ul>
+<h3 id="kenngrossen">Kenngrössen</h3>
+<p><em>Lagemass</em>: Was ist das Zentrum
+<em>Streumass</em>: Die Verteilung des Merkmals</p>
+<ul>
+<li>Erwartungswert <span class="arithmatex">\(E(X)=\sum_{x\in\R}P(X=x)\cdot x\)</span></li>
+<li><span class="arithmatex">\(E(X+Y)=E(X)+E(Y)\)</span> und <span class="arithmatex">\(E(\alpha X) = \alpha E(X)\)</span></li>
+<li>Varianz
+   <span class="arithmatex">\(V(X)=E(X^2)-(E(X))^2 = E((X-E(X)^2)=\\(\sum_{x\in\R}P(X=x)\cdot x^2)-E(X)^2=\sum_{x\in\R}P(X=x)\cdot(x-E(X))^2\)</span></li>
+</ul>
+<h3 id="bedingte-wahrscheinlichkeit">Bedingte Wahrscheinlichkeit</h3>
+<ul>
+<li>Eintreten von <span class="arithmatex">\(B\)</span>, wenn <span class="arithmatex">\(A\)</span> eingetroffen ist (Satz von Bayes): <span class="arithmatex">\(P(B\vert A) = \frac{P(A\cap B)}{P(A)}=\frac{P(A\vert B)\cdot P(B)}{P(A)}\)</span></li>
+<li>Multiplikationssatz: <span class="arithmatex">\(P(A\cap B)=P(A\vert B)\cdot P(B)=P(B\vert A)\cdot P(A)\)</span></li>
+<li>Satz von der Totalen Wahrscheinlichkeit: <span class="arithmatex">\(P(A)=P(A\vert B)\cdot P(B) + P(A|\overline B)\cdot P(\overline B)\)</span></li>
+</ul>
+<p><img alt="image-20221228215218524" src="res/STS%20Summary/image-20221228215218524.png" /></p>
+<h4 id="vierfeldertafel">Vierfeldertafel</h4>
+<p><img alt="image-20221228221126638" src="res/STS%20Summary/image-20221228221126638.png" /></p>
+<p>Die Ereignisse in einer Vierfeldertafel <strong>müssen</strong> Disjunkt sein.</p>
+<h3 id="stochastische-unabhangigkeit">Stochastische Unabhängigkeit</h3>
+<p>Zwei Ereignisse <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span> sind stochastisch unabhängig, wenn gilt <span class="arithmatex">\(P(A\cap B)=P(A)\cdot P(B)\)</span>.</p>
+<p>Wenn <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span> stochastisch unabhänig sind:</p>
+<ul>
+<li>sind auch <span class="arithmatex">\(\overline A\)</span> und <span class="arithmatex">\(\overline B\)</span>, wie <span class="arithmatex">\(\overline A\)</span> mit <span class="arithmatex">\(B\)</span> und <span class="arithmatex">\(A\)</span> mit <span class="arithmatex">\(\overline B\)</span> unabhängig</li>
+<li>gilt <span class="arithmatex">\(P(A\vert B)=P(A)\)</span> und <span class="arithmatex">\(P(B\vert A)=P(B)\)</span></li>
+<li>gilt <span class="arithmatex">\(E(X\cdot Y)=E(X)\cdot E(Y)\)</span> und <span class="arithmatex">\(V(X+Y)=V(X) + V(Y)\)</span></li>
+</ul>
+<p>Um zu überprüfen ob <span class="arithmatex">\(n\)</span> Ereignisse unabhänig sind, braucht es <span class="arithmatex">\(2^n - n -1\)</span> Gleichungen, da sie disjunkt unabhängig sein müssen.</p>
+<h2 id="spezielle-verteilungen">Spezielle Verteilungen</h2>
+<p><img alt="image-20221228225108803" src="res/STS%20Summary/image-20221228225108803.png" /></p>
+<p><img alt="image-20221228232507576" src="res/STS%20Summary/image-20221228232507576.png" /></p>
+<h3 id="hypergeometrische-verteilung-x-sim-hn-m-n">Hypergeometrische Verteilung (<span class="arithmatex">\(X \sim H(N, M, n)\)</span>)</h3>
+<p>Es gibt eine Urne mit <span class="arithmatex">\(N\)</span> Objekte, von welchen <span class="arithmatex">\(M\)</span> einer bestimmten Sorte angehöhren (<span class="arithmatex">\(N- M\)</span> gehöhren zu anderen Sorten). Zufällig wird eine Stichprobe von <span class="arithmatex">\(n\)</span> Objekten aus der Urne genommen. Wichtig ist, dass <strong>nicht Zurückgelegt wird</strong>.</p>
+<p>Die Zufallsvariable <span class="arithmatex">\(X\)</span> beschriebt die Anzahl von Objekten von der Sorte <span class="arithmatex">\(M\)</span>. Es gilt <span class="arithmatex">\(X \sim H(N, M, n)\)</span>
+$$
+P(X=x)=\frac{\begin{pmatrix}M\x\end{pmatrix}\cdot \begin{pmatrix}N - M\n - x\end{pmatrix}}
+{\begin{pmatrix}N\n\end{pmatrix}}\
+$$</p>
+<div class="arithmatex">\[
+\begin{align}
+\mu=E(X)&amp;=n\cdot \frac M N\\
+\sigma^2=V(X)&amp;=n\cdot \frac M N \cdot (1 - \frac M N) \cdot \frac{N - n}{N - 1}\\
+\sigma = S(X)&amp;=\sqrt{n\cdot \frac M N \cdot (1 - \frac M N) \cdot \frac{N - n}{N - 1}}
+\end{align}
+\]</div>
+<h3 id="bernoulliverteilung">Bernoulliverteilung</h3>
+<p>Ein Bernoulli-Expermient, ist ein Zufallsexperiment, inwelchem es nur zwei Möglichkeiten gibt.
+$$
+\begin{align}
+P(X=1)&amp;=p\
+P(X=0)&amp;=1-p=q\
+\end{align}
+$$</p>
+<div class="arithmatex">\[
+\begin{align}
+E(X)&amp;= P(X=1)=p\\
+E(X^2)&amp;= P(X=1) = p\\
+V(X)&amp;=E(X^2)-(E(X))^2=p - p^2
+\end{align}
+\]</div>
+<h3 id="binomailverteilung-xsim-bn-p">Binomailverteilung (<span class="arithmatex">\(X\sim B(n, p)\)</span>)</h3>
+<p>Wenn ein Bernoulliexperiment <span class="arithmatex">\(n\)</span>-mal wiederholt wird und die Wahrscheinlichkeit für <span class="arithmatex">\(P(X=1)=p\)</span> ist und <span class="arithmatex">\(q=1-p\)</span>. Die Wiederholungen <strong>müssen</strong> stochastisch unabhängig sein. </p>
+<p>Es gilt <span class="arithmatex">\(X\sim B(n, p)\)</span>
+$$
+P(X=x)=\begin{pmatrix}n\x\end{pmatrix}\cdot p^x\cdot q^{n-x}
+$$</p>
+<div class="arithmatex">\[
+\begin{align}
+\mu=E(X)&amp;=np\\
+\sigma^2=V(X)&amp;=npq\\
+\sigma = S(X)&amp;=\sqrt{npq}
+\end{align}
+\]</div>
+<p>Wenn gilt <span class="arithmatex">\(n \lesssim \frac N {20}\)</span>, dann kann die eine hypergeometrische Verteilung mit einer Binomialverteilung angenähert werden: <span class="arithmatex">\(H(N, M, n)\approx B(n, \frac M N)\)</span></p>
+<h3 id="poissonverteilung-xsim-plambda">Poissonverteilung (<span class="arithmatex">\(X\sim P(\lambda)\)</span>)</h3>
+<p>Die Poissonverteilung kann als stochastisches Modell benutzt werden, wenn es um die Wahrscheinlichkeit für das Eintreten einer bestimmten Anzahl gleichartiger Ereignisse geht, welche in einem gegebenen Bereich <span class="arithmatex">\(\lambda\)</span> (unabhängigi voneiner) beliebig oft auftreten können.
+$$
+P(X=x)=\frac{\lambda^x}{x!}\cdot e^{-\lambda}
+$$</p>
+<div class="arithmatex">\[
+\begin{align}
+\mu=E(X)&amp;=\lambda\\
+\sigma^2=V(X)&amp;=\lambda\\
+\sigma = S(X)&amp;=\sqrt{\lambda}
+\end{align}
+\]</div>
+<p>Für eine Binomialverteilung wenn <span class="arithmatex">\(n\)</span> gegen unendlich geht und <span class="arithmatex">\(\lambda=np\)</span> konstant ist, dann kann eine Binomialverteilung mit einer Poissonverteilung approximiert werden: <span class="arithmatex">\(B(n, p)\xrightarrow{n\to \infty \text{ und } \lambda=np \text{ konstant}} Poi(\lambda)\)</span></p>
+<p>Ebenfalls wenn <span class="arithmatex">\(n \gtrsim 50\)</span> und <span class="arithmatex">\(p\lesssim 0.1\)</span>, dann kann eine Binomialverteilung mit einer Poissonverteilung approximiert werden: <span class="arithmatex">\(B(n, p)\approx Poi(n\cdot p)\)</span></p>
+<h3 id="gausssche-verteilung-xsim-nmu-sigma-xsim-n0-1">Gauss'sche Verteilung (<span class="arithmatex">\(X\sim N(\mu, \sigma)\)</span> / <span class="arithmatex">\(X\sim N(0, 1)\)</span>)</h3>
+<div class="arithmatex">\[
+\begin{align}
+\text{PDF: }\varphi_{\mu,\sigma}(x)&amp;=\frac{1}{\sqrt{2\pi}\cdot\sigma}\cdot e^{-\frac1 2\cdot (\frac{x-\mu}{\sigma})^2}\\
+\text{CDF: }\phi_{\mu, \sigma}(x)&amp;=\int^x_{-\infty}\varphi_{\mu, \sigma}(t)\mathrm dt0
+=\frac 1 {\sqrt{2\pi}\cdot \sigma}\cdot \int^x_{-\infty}e^{-\frac 1 2(\frac{t-\mu}{\sigma})^2}\mathrm dt
+\end{align}
+\]</div>
+<p>Wenn <span class="arithmatex">\(\mu=0\)</span> und <span class="arithmatex">\(\sigma = 1\)</span> ist, dann wird von einer Standardnormalverteilung gesprochen und wird einfach als <span class="arithmatex">\(\varphi(x)\)</span> bezeichnet:
+$$
+\varphi(x)=\frac 1 {\sqrt{2\pi}}\cdot e^{-\frac 1 2 x^2}
+$$
+Um eine "normale" Gauss'sche Verteilung zu standardisieren, wird anstatt der Zufallsvariable <span class="arithmatex">\(X\)</span> folgende Definition <span class="arithmatex">\(U=\frac{X-\mu} \sigma\)</span> verwendet.</p>
+<p>Der Erwartungswert <span class="arithmatex">\(\mu\)</span> und Standardabweichung <span class="arithmatex">\(\sigma\)</span> sind Parameter.</p>
+<p>Eine Normalverteilung hat folgende Eigenschaften:</p>
+<ul>
+<li>Ist Symetrisch bei der Geraden <span class="arithmatex">\(x=\mu\)</span></li>
+<li>Hat Wendepunkte bei <span class="arithmatex">\(\mu-\sigma\)</span> und <span class="arithmatex">\(\mu + \sigma\)</span></li>
+<li>Ist normiert (totale Fläche unter der Kurve = 1)</li>
+<li>Je grösser <span class="arithmatex">\(\sigma\)</span>, desto breiter und niedriger wird die Glockenkurve</li>
+<li>Eine Änderung von <span class="arithmatex">\(\mu\)</span> verschiebt die Kurve in der x-Richtung</li>
+<li><span class="arithmatex">\(P(a \le X \le b) = P(a &lt; X &lt; b) = \phi_{\mu, \sigma}(b)-\phi_{\mu, \sigma}(a)\)</span></li>
+<li><span class="arithmatex">\(P(\vert X - \mu \vert \le \varepsilon)=P(\mu - \varepsilon \le X \le \mu + \varepsilon)=2\cdot \phi_{\mu, \sigma}(\mu + \varepsilon) - 1= 1 - 2\cdot \phi_{\mu,\sigma}(\mu - \varepsilon)\)</span></li>
+</ul>
+<p><img src="res/STS Summary/image-20221229100719628.png" alt="image-20221229100719628" style="zoom:13%" /></p>
+<p>Für die Verteilung <span class="arithmatex">\(N(\mu, \sigma)\)</span>, liegen</p>
+<ul>
+<li>ca. 68% der Werte zwischen <span class="arithmatex">\(\mu-\sigma\)</span> und <span class="arithmatex">\(\mu + \sigma\)</span></li>
+<li>ca. 95% der Werte zwischen <span class="arithmatex">\(\mu-2\sigma\)</span> und <span class="arithmatex">\(\mu + 2\sigma\)</span></li>
+<li>ca 99.7% der Wete zwischen <span class="arithmatex">\(\mu-3\sigma\)</span> und <span class="arithmatex">\(\mu + 3\sigma\)</span></li>
+</ul>
+<p><img src="res/STS Summary/image-20221229110242775.png" alt="image-20221229110242775" style="zoom:15%;" /></p>
+<h4 id="approximationen">Approximationen</h4>
+<table>
+<thead>
+<tr>
+<th>Was</th>
+<th>Bedingung</th>
+<th>Approximation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(X\sim B(n, p)\)</span></td>
+<td><span class="arithmatex">\(npq&gt;9\)</span></td>
+<td><span class="arithmatex">\(P(a\le X \le b)=\sum^b_{x=a}P(X=x)\approx \phi_{\mu, \sigma}(b+\frac 1 2)-\phi_{\mu,\sigma}(a-\frac 1 2)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(X\sim P(\lambda))\)</span></td>
+<td><span class="arithmatex">\(x &gt; 9\)</span></td>
+<td><span class="arithmatex">\(P(a \le X \le b)=\sum^b_{x=a}P(X=x)\approx \phi_{\mu, \sigma}(b+\frac 1 2)-\phi_{\mu,\sigma}(a-\frac 1 2)\)</span></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="zentraler-grenzwertsatz">Zentraler Grenzwertsatz</h3>
+<p>Wenn mehrere stochastische unabhängige Zufallsvariabeln den selben Erwartungswert <span class="arithmatex">\(\mu\)</span> und dieselbe Varianz <span class="arithmatex">\(\sigma ^2\)</span> haben, dann gilt für die Summe <span class="arithmatex">\(S_n=\sum^n_{i=1}X_i\)</span> der Zufallsvariabeln folgendes:</p>
+<ul>
+<li><span class="arithmatex">\(E(S_n)=n\mu\)</span></li>
+<li><span class="arithmatex">\(V(S_n)=n\sigma^2\)</span></li>
+</ul>
+<p>Zusätzlich gilt, dass die Vertielungsfunktion <span class="arithmatex">\(F_n(u)\)</span> der standartisierten Zufallsvariable
+$$
+U_n=\frac{(X_1 + X_2 +...+X_n)-n\mu}{\sqrt n \cdot \sigma}=\frac{\overline X - \mu}{\frac \sigma {\sqrt{n}}}\
+\overline X = \frac {S_n} n
+$$
+für <span class="arithmatex">\(n\to\infty\)</span> gegen die Verteilungsfunktion <span class="arithmatex">\(\phi(u)\)</span> der Standardnormalverteilung konvergiert.</p>
+<p>Es kann ebenfalls gesagt werden, dass das arithmetische Mittel <span class="arithmatex">\(\overline X_n\)</span> von <span class="arithmatex">\(n\)</span> identisch verteilen, unabhänigen Zufallsvariablen näherungsweise <span class="arithmatex">\(N(\mu, \frac \sigma {\sqrt n})\)</span> verteilt ist.</p>
+<h2 id="regression">Regression</h2>
+<p>Das Ziel einer Regresinos-Gerade <span class="arithmatex">\(g=m\cdot x + d\)</span> ist es den Residuen (oder Fehler) <span class="arithmatex">\(\sum^n_{i=1} (y_i-g(x_i))^2\)</span> zu minimieren. 
+$$
+m=\frac{S_{xy}}{S_x^2}{}\
+d=\overline y - m\overline x\
+S_\epsilon^2=\S_y^2-\frac{S_{xy}^2}{S_x^2}
+$$
+<span class="arithmatex">\(S_{xy}\)</span> ist die kovarianz, <span class="arithmatex">\(S_x^2\)</span> ist die (nicht korrigierte)  Varianz, <span class="arithmatex">\(S_\epsilon^2\)</span> ist die Residualvarianz</p>
+<h3 id="bestimmtheitsmass">Bestimmtheitsmass</h3>
+<div class="arithmatex">\[
+\begin{align}
+S_y^2&amp;=S_\epsilon^2 + S_{\hat y}^2\\
+R^2&amp;=\frac{S_{\hat y}^2}{S_y^2}\\
+R^2&amp;=\frac{S_{xy}^2}{S_x^2\cdot S_y^2}=r_{xy}^2 \\
+&amp;=\text{Pearson-Korrelationskoeffizient}
+\end{align}
+\]</div>
+<p>Das Bestimmheitsmass ist zwischen 0 und 1. 0 heisst dass die Gerate nicht passt. 1 heisst, dass die Gerade perfekt passt. Wenn <span class="arithmatex">\(R^2=0.75\)</span> ist, bedeut dies, dass 75% der gesammten Varianz durch die Regressionsgerade erklärt wird und 25% ist zufalls bedingt.</p>
+<p><img alt="image-20221229123936996" src="res/STS%20Summary/image-20221229123936996.png" /></p>
+<h3 id="linearisieren">Linearisieren</h3>
+<p>Eine nicht lineare Funktion kann linearisiert werden. Danach ist sie linear und kann durch eine Regressions-Gerade angenähert werden.</p>
+<p><img alt="image-20221229124035207" src="res/STS%20Summary/image-20221229124035207.png" /></p>
+<h3 id="matrizen">Matrizen</h3>
+<p>Gegeben sind <span class="arithmatex">\(n\)</span> Gleichungen und es sind <span class="arithmatex">\(k\)</span> Regressionsparameter <span class="arithmatex">\(x_1\)</span>, <span class="arithmatex">\(x_2\)</span>, ..., <span class="arithmatex">\(x_k\)</span> gesucht.</p>
+<p><img alt="image-20221229124953312" src="res/STS%20Summary/image-20221229124953312.png" /></p>
+<p>Die Lösung für <span class="arithmatex">\(\vec x\)</span> ist: <span class="arithmatex">\(\vec x=(A^TA)^{-1}X^T\vec y\)</span></p>
+<h2 id="schliessende-statistik">Schliessende Statistik</h2>
+<p><span class="arithmatex">\(\Theta=g(X_1, X_2, ..., X_n)\)</span> ist eine Funktion, welche von <span class="arithmatex">\(n\)</span> Stichprobenvariabeln die Grundgesammtheit schätzen kann. Ein Schätzwert wird als <span class="arithmatex">\(\hat \theta\)</span> bezeichnet. <span class="arithmatex">\(\theta\)</span> (ohne Dach) ist der eigentliche, unbekannte Wert/Parameter.</p>
+<p><img alt="image-20221229144629387" src="res/STS%20Summary/image-20221229144629387.png" /></p>
+<p><span class="arithmatex">\(\overline X\)</span> und <span class="arithmatex">\(S^2\)</span> sind erwartungstreu (<span class="arithmatex">\(E(\Theta)=\theta\)</span>) und konsistent. <span class="arithmatex">\(S\)</span> ist konsitent (<span class="arithmatex">\(E(\Theta)\to \theta\)</span> und <span class="arithmatex">\(V(\Theta)\to 0\)</span> für <span class="arithmatex">\(n\to \infty\)</span>) aber nicht erwartungstreu. </p>
+<p>Eine Schätzfunktion <span class="arithmatex">\(\Theta_1\)</span> ist effizienter als <span class="arithmatex">\(\Theta_2\)</span> wenn gilt <span class="arithmatex">\(V(\Theta_1) &lt; V(\Theta_2)\)</span></p>
+<p><img alt="image-20221229145640726" src="res/STS%20Summary/image-20221229145640726.png" /></p>
+<h3 id="vertrauensintervalle">Vertrauensintervalle</h3>
+<p>Es werden zwei Stichprobenfunktionen <span class="arithmatex">\(\Theta_u\)</span> und <span class="arithmatex">\(\Theta_o\)</span> bestummen, welche den wen wahren Wert <span class="arithmatex">\(\theta\)</span> mit einer vorgegebener Wahrscheinlichkeit von <span class="arithmatex">\(\gamma\)</span> einschliesst.
+$$
+P(\Theta_u \le \theta \le \Theta_o)=\gamma
+$$
+Wenn konkrete Werte in <span class="arithmatex">\(\Theta_u\)</span> und <span class="arithmatex">\(\Theta_o\)</span> eingesetzt werden, dann wird das Intervall <span class="arithmatex">\([c_u; c_o]\)</span> gebildet. <span class="arithmatex">\(\gamma\)</span> heisst das Vertrauensniveau (oder statistische Sicherheit) und <span class="arithmatex">\(\alpha = 1 - \gamma\)</span> ist die Irrtumwahrscheinlichkeit.</p>
+<p><img alt="image-20221229150717439" src="res/STS%20Summary/image-20221229150717439.png" /></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-01-09
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
